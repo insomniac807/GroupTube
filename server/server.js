@@ -28,7 +28,7 @@ app.get('/myYouTubeInfo', async (req, res) => {
 
     try {
         const result = await axios({
-            mathod: "POST",
+            method: "POST",
             headers: {
                 authorization: "Bearer " + access_token
             },
