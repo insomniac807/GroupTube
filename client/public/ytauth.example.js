@@ -51,16 +51,6 @@ function handleLogInOut(event) {
 }
 
 
-function handleAuthClick(event) {
-    gapi.auth2.getAuthInstance().signIn();
-}
-
-
-function handleSignoutClick(event) {
-    gapi.auth2.getAuthInstance().signOut();
-}
-
-
 // Load the API and make an API call.  Display the results on the screen.
 function makeApiCall() {
     let token = gapi.auth2.getAuthInstance().currentUser.get().getAuthResponse().access_token;
